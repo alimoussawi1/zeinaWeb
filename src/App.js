@@ -48,17 +48,21 @@ const HeroSection = () => {
             <div className="relative group">
               {/* Photo Container with Elegant Border */}
               <div className="relative w-80 h-80 lg:w-96 lg:h-96">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#8B9A6B]/20 to-[#7A8A5A]/10 blur-sm transform rotate-3 group-hover:rotate-6 transition-transform duration-500"></div>
-                <div className="absolute inset-2 rounded-full bg-white shadow-2xl">
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#8B9A6B]/20 to-[#7A8A5A]/10 blur-sm transform rotate-3 transition-transform duration-500"></div>
+
+                <div className="absolute inset-2 rounded-full bg-white shadow-2xl overflow-hidden">
                   <img
                     src={zeinalogo}
                     alt="Zeina Laham - Professional Psychologist"
-                    className="w-full h-full object-contain rounded-full"
+                    className="rounded-full object-cover w-[110%] h-[110%] -translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-1/2"
                   />
                 </div>
+
                 {/* Decorative Ring */}
                 <div className="absolute -inset-4 rounded-full border-2 border-[#8B9A6B]/30 animate-pulse"></div>
               </div>
+
+
 
               {/* Floating Badge */}
               <div className="absolute -bottom-4 -right-4 bg-white rounded-2xl px-4 py-2 shadow-lg border border-[#8B9A6B]/20 transform rotate-3 group-hover:rotate-0 transition-transform duration-300">
@@ -152,7 +156,6 @@ const HeroSection = () => {
       <div className="flex justify-center mb-2">
 
         <h2 className="text-2xl sm:text-3xl font-light text-[#8B7355]">
-          What We <em className="italic">Treat</em>
         </h2>
 
       </div>

@@ -103,13 +103,16 @@ function Navbar() {
       </nav>
 
       {/* Mobile Menu Overlay */}
+      {/* Mobile Menu Overlay */}
       {isMenuOpen && (
         <div
           className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 lg:hidden transition-opacity duration-300"
-          onClick={toggleMenu}
+          onClick={(e) => {
+            e.stopPropagation();
+            toggleMenu();
+          }}
         />
       )}
-
       {/* Mobile Menu */}
       <div className={`fixed top-0 right-0 h-full bg-white shadow-2xl z-50 transition-transform duration-300 ease-out ${isMenuOpen ? "translate-x-0" : "translate-x-full"
         } w-100 lg:hidden`}>
