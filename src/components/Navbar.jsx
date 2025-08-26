@@ -30,29 +30,29 @@ function Navbar() {
               </Link>
               <Link
                 to="/about-us"
-                className={`text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:text-[#8B9A6B] relative group ${location.pathname === "/gallery" ? "text-[#8B9A6B]" : "text-gray-700"
+                className={`text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:text-[#8B9A6B] relative group ${location.pathname === "/about-us" ? "text-[#8B9A6B]" : "text-gray-700"
                   }`}
               >
                 About
-                <span className={`absolute -bottom-1 left-0 h-0.5 bg-[#8B9A6B] transition-all duration-300 ${location.pathname === "/gallery" ? "w-full" : "w-0 group-hover:w-full"
+                <span className={`absolute -bottom-1 left-0 h-0.5 bg-[#8B9A6B] transition-all duration-300 ${location.pathname === "/about-us" ? "w-full" : "w-0 group-hover:w-full"
                   }`}></span>
               </Link>
               <Link
                 to="/services"
-                className={`text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:text-[#8B9A6B] relative group ${location.pathname === "/gallery" ? "text-[#8B9A6B]" : "text-gray-700"
+                className={`text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:text-[#8B9A6B] relative group ${location.pathname === "/services" ? "text-[#8B9A6B]" : "text-gray-700"
                   }`}
               >
                 Services
-                <span className={`absolute -bottom-1 left-0 h-0.5 bg-[#8B9A6B] transition-all duration-300 ${location.pathname === "/gallery" ? "w-full" : "w-0 group-hover:w-full"
+                <span className={`absolute -bottom-1 left-0 h-0.5 bg-[#8B9A6B] transition-all duration-300 ${location.pathname === "/services" ? "w-full" : "w-0 group-hover:w-full"
                   }`}></span>
               </Link>
               <Link
                 to="/insights"
-                className={`text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:text-[#8B9A6B] relative group ${location.pathname === "/gallery" ? "text-[#8B9A6B]" : "text-gray-700"
+                className={`text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:text-[#8B9A6B] relative group ${location.pathname === "/insights" ? "text-[#8B9A6B]" : "text-gray-700"
                   }`}
               >
                 Insights
-                <span className={`absolute -bottom-1 left-0 h-0.5 bg-[#8B9A6B] transition-all duration-300 ${location.pathname === "/gallery" ? "w-full" : "w-0 group-hover:w-full"
+                <span className={`absolute -bottom-1 left-0 h-0.5 bg-[#8B9A6B] transition-all duration-300 ${location.pathname === "/insights" ? "w-full" : "w-0 group-hover:w-full"
                   }`}></span>
               </Link>
 
@@ -64,7 +64,7 @@ function Navbar() {
                 <img
                   src={zeinalogo}
                   alt="Zeina Laham Psychology"
-                  className="w-full max-w-[800px] h-[115px] object-contain transition-transform duration-300"
+                  className="w-full max-w-[1000px] h-[1000px] object-contain transition-transform duration-300"
                 />
 
               </Link>
@@ -112,15 +112,11 @@ function Navbar() {
 
       {/* Mobile Menu */}
       <div className={`fixed top-0 right-0 h-full bg-white shadow-2xl z-50 transition-transform duration-300 ease-out ${isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } w-80 lg:hidden`}>
+        } w-100 lg:hidden`}>
 
         {/* Mobile Menu Header */}
-        <div className="flex items-center justify-between p-6 border-b border-gray-100">
-          <img
-            src={zeinalogo}
-            alt="Zeina Laham Psychology"
-            className="h-10 w-auto max-w-48 object-contain"
-          />
+        <div className="flex items-center justify-end p-4 border-b border-gray-100">
+
           <button
             className="p-2 rounded-xl hover:bg-gray-100 transition-colors duration-200"
             onClick={toggleMenu}
@@ -136,9 +132,12 @@ function Navbar() {
         <div className="p-6">
           <nav className="space-y-6">
             {[
-              { path: "/", label: "Main" },
-              { path: "/gallery", label: "Services" },
-              { path: "/contactUs", label: "Book a Session", isButton: true }
+              { path: "/", label: "Home" },
+              { path: "/about-us", label: "About" },
+
+              { path: "/services", label: "Services" },
+              { path: "/insights", label: "Insights" },
+              { path: "/book-session", label: "Book a Session", isButton: true }
             ].map((item) => (
               <Link
                 key={item.path}

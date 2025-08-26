@@ -352,11 +352,11 @@ const RegistrationForm = () => {
                     </div>
 
                     {/* Submit Button */}
-                    <div className="pt-6">
+                    <div className="pt-6 flex justify-center">
                         <button
                             type="button"
                             onClick={handleBooking}
-                            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                            className="bg-[#8B9A6B] hover:bg-[#7A8A5A] text-white px-6 py-2.5 rounded-full text-sm font-semibold tracking-wide transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg"
                         >
                             {sending ? 'Sending…' : 'Submit Registration'}
                         </button>

@@ -152,7 +152,7 @@ const HeroSection = () => {
       <div className="flex justify-center mb-2">
 
         <h2 className="text-2xl sm:text-3xl font-light text-[#8B7355]">
-          What we <em className="italic">Treat</em>
+          What We <em className="italic">Treat</em>
         </h2>
 
       </div>

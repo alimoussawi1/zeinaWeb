@@ -106,10 +106,6 @@ const ServicesSection = () => {
 
             </div>
 
-            <div className="mt-10">
-                <ConditionsMarquee />
-
-            </div>
 
 
             {/* Bottom Wave Decoration */}

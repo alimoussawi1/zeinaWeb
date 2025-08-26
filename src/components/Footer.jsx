@@ -79,7 +79,7 @@ const Footer = () => {
                 <div className="p-2 bg-[#8B9A6B]/10 rounded-lg">
                   <Globe className="w-4 h-4 text-[#8B9A6B]" />
                 </div>
-                <span className="text-sm">Serving you worldwide</span>
+                <span className="text-sm">Serving you from the comfort of your home</span>
               </div>
             </div>
           </div>
