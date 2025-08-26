@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/zeinaWeb/static/css/main.59b9a9ac.css",
-    "main.js": "/zeinaWeb/static/js/main.868a3686.js",
-    "static/media/logo.png": "/zeinaWeb/static/media/logo.017aba97040a8b170355.png",
-    "static/media/zeina.png": "/zeinaWeb/static/media/zeina.ebe484269b740e47b2a7.png",
+    "main.css": "/zeinaWeb/static/css/main.39f5a9f4.css",
+    "main.js": "/zeinaWeb/static/js/main.443bf2e3.js",
+    "static/media/zeina.png": "/zeinaWeb/static/media/zeina.6ef8ab625d2b20aed654.png",
     "static/media/3.jpg": "/zeinaWeb/static/media/3.248ba5e7f63bcd1f4102.jpg",
     "static/media/4.jpg": "/zeinaWeb/static/media/4.d1edd51bd2e696df32a8.jpg",
     "static/media/6.jpg": "/zeinaWeb/static/media/6.5b9ddae8a0277e4b0ac4.jpg",
@@ -12,13 +11,14 @@
     "static/media/5.jpg": "/zeinaWeb/static/media/5.283149502c940cb49701.jpg",
     "static/media/2.jpg": "/zeinaWeb/static/media/2.512244e2e4f07b250e0a.jpg",
     "static/media/chair.jpeg": "/zeinaWeb/static/media/chair.8718e849467de5c21a25.jpeg",
+    "static/media/logo.png": "/zeinaWeb/static/media/logo.d3a34eeef7747435ef51.png",
     "static/media/recreo.png": "/zeinaWeb/static/media/recreo.1e6ffae54b00359bb659.png",
     "index.html": "/zeinaWeb/index.html",
-    "main.59b9a9ac.css.map": "/zeinaWeb/static/css/main.59b9a9ac.css.map",
-    "main.868a3686.js.map": "/zeinaWeb/static/js/main.868a3686.js.map"
+    "main.39f5a9f4.css.map": "/zeinaWeb/static/css/main.39f5a9f4.css.map",
+    "main.443bf2e3.js.map": "/zeinaWeb/static/js/main.443bf2e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.59b9a9ac.css",
-    "static/js/main.868a3686.js"
+    "static/css/main.39f5a9f4.css",
+    "static/js/main.443bf2e3.js"
   ]
 }
