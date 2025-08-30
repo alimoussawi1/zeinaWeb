@@ -50,7 +50,7 @@ const ServicesSection = () => {
                 <div className="text-center mb-16">
                     <div className="space-y-6">
                         <h2 className="text-5xl lg:text-6xl font-light text-[#8B7355] leading-tight font-baloo">
-                            Individual Therapy
+                            Individual & Group Therapy
                         </h2>
 
                         <div className="flex items-center justify-center space-x-3">

@@ -13,9 +13,9 @@ function Navbar() {
   return (
     <>
       {/* Main Navbar */}
-      <nav className="bg-[#faf5ee]/95 backdrop-blur-md shadow-lg fixed h-25 top-0 w-full z-50 border-b border-gray-200/20">
-        <div className="container mx-auto px-6 lg:px-8 max-w-7xl">
-          <div className="flex items-center justify-between h-24 lg:h-28">
+      <nav className="bg-white shadow-md fixed w-full z-50 border-b border-gray-200">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="flex items-center justify-between h-20 lg:h-24">
 
             {/* Left Navigation - Desktop */}
             <div className="hidden lg:flex items-center space-x-8 flex-1">
@@ -55,18 +55,16 @@ function Navbar() {
                 <span className={`absolute -bottom-1 left-0 h-0.5 bg-[#8B9A6B] transition-all duration-300 ${location.pathname === "/insights" ? "w-full" : "w-0 group-hover:w-full"
                   }`}></span>
               </Link>
-
             </div>
 
             {/* Center Logo */}
-            <div className="flex items-center justify-center flex-1 lg:flex-2">
-              <Link to="/" className="group">
+            <div className="flex-shrink-0 mx-4 lg:mx-0">
+              <Link to="/" className="block">
                 <img
                   src={zeinalogo}
                   alt="Zeina Laham Psychology"
-                  className="w-full max-w-[1000px] h-[1000px] object-contain transition-transform duration-300"
+                  className="h-12 w-auto sm:h-16 lg:h-20 max-w-full object-contain transition-transform duration-300 hover:scale-105"
                 />
-
               </Link>
             </div>
 
@@ -74,12 +72,11 @@ function Navbar() {
             <div className="hidden lg:flex items-center justify-end flex-1">
               <Link
                 to="/book-session"
-                className="bg-[#8B9A6B] hover:bg-[#7A8A5A] text-white px-6 py-2.5 rounded-full text-sm font-semibold tracking-wide transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg animate-bounce"
+                className="bg-[#8B9A6B] hover:bg-[#7A8A5A] text-white px-6 py-2.5 rounded-full text-sm font-semibold tracking-wide transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg"
               >
                 Book a Session
               </Link>
             </div>
-
 
             {/* Mobile Menu Button */}
             <div className="lg:hidden">
@@ -103,23 +100,24 @@ function Navbar() {
       </nav>
 
       {/* Mobile Menu Overlay */}
-      {/* Mobile Menu Overlay */}
       {isMenuOpen && (
         <div
           className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 lg:hidden transition-opacity duration-300"
-          onClick={(e) => {
-            e.stopPropagation();
-            toggleMenu();
-          }}
+          onClick={toggleMenu}
         />
       )}
+
       {/* Mobile Menu */}
       <div className={`fixed top-0 right-0 h-full bg-white shadow-2xl z-50 transition-transform duration-300 ease-out ${isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } w-100 lg:hidden`}>
+        } w-80 sm:w-96 lg:hidden`}>
 
         {/* Mobile Menu Header */}
-        <div className="flex items-center justify-end p-4 border-b border-gray-100">
-
+        <div className="flex items-center justify-between p-4 border-b border-gray-100">
+          <img
+            src={zeinalogo}
+            alt="Zeina Laham Psychology"
+            className="h-10 w-auto object-contain"
+          />
           <button
             className="p-2 rounded-xl hover:bg-gray-100 transition-colors duration-200"
             onClick={toggleMenu}
@@ -137,7 +135,6 @@ function Navbar() {
             {[
               { path: "/", label: "Home" },
               { path: "/about-us", label: "About" },
-
               { path: "/services", label: "Services" },
               { path: "/insights", label: "Insights" },
               { path: "/book-session", label: "Book a Session", isButton: true }
@@ -146,10 +143,10 @@ function Navbar() {
                 key={item.path}
                 to={item.path}
                 className={`block text-base font-semibold tracking-wide transition-all duration-300 ${item.isButton
-                  ? "bg-[#8B9A6B] hover:bg-[#7A8A5A] text-white px-6 py-3 rounded-xl text-center"
-                  : location.pathname === item.path
-                    ? "text-[#8B9A6B] pl-4 border-l-2 border-[#8B9A6B]"
-                    : "text-gray-700 hover:text-[#8B9A6B] hover:pl-2"
+                    ? "bg-[#8B9A6B] hover:bg-[#7A8A5A] text-white px-6 py-3 rounded-xl text-center"
+                    : location.pathname === item.path
+                      ? "text-[#8B9A6B] pl-4 border-l-2 border-[#8B9A6B]"
+                      : "text-gray-700 hover:text-[#8B9A6B] hover:pl-2"
                   }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -170,7 +167,7 @@ function Navbar() {
       </div>
 
       {/* Spacer for fixed navbar */}
-      <div className="h-24 lg:h-28"></div>
+      <div className="h-20 lg:h-24"></div>
     </>
   );
 }

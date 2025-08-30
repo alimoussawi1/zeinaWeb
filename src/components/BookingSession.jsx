@@ -119,7 +119,7 @@ const RegistrationForm = () => {
                                     name="lastName"
                                     value={formData.lastName}
                                     onChange={handleInputChange}
-                                    onFocus={handleInputFocus}
+                                    // onFocus={handleInputFocus}
                                     className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg bg-gray-50 focus:bg-white focus:border-blue-500 focus:outline-none transition-all duration-200 text-base"
                                 />
                             </div>

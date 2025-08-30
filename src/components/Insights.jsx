@@ -169,7 +169,7 @@ export default function Insights() {
                                                 desc: "Wechsler Intelligence Scale for Children",
                                             },
                                             {
-                                                test: "WAIS-IV",
+                                                test: "WAIS-V",
                                                 desc: "Wechsler Adult Intelligence Scale",
                                             },
                                             {
@@ -177,8 +177,8 @@ export default function Insights() {
                                                 desc: "Minnesota Multiphasic Personality Inventory",
                                             },
                                             {
-                                                test: "WRAT-4",
-                                                desc: "Wide Range Achievement Test",
+                                                test: "WIAT-IV",
+                                                desc: "Wechsler Individual Achievement Test",
                                             },
                                         ].map((assessment, index) => (
                                             <div
