@@ -65,10 +65,10 @@ const HeroSection = () => {
 
 
               {/* Floating Badge */}
-              <div className="absolute -bottom-4 -right-4 bg-white rounded-2xl px-4 py-2 shadow-lg border border-[#8B9A6B]/20 transform rotate-3 group-hover:rotate-0 transition-transform duration-300">
-                <div className="text-xs font-semibold text-[#8B9A6B]"> Clinical Psychologist</div>
-                {/* <div className="text-xs text-gray-600">TLLP</div> */}
-              </div>
+              {/* <div className="absolute -bottom-4 -right-4 bg-white rounded-2xl px-4 py-2 shadow-lg border border-[#8B9A6B]/20 transform rotate-3 group-hover:rotate-0 transition-transform duration-300"> */}
+              {/* <div className="text-xs font-semibold text-[#8B9A6B]"> Clinical Psychologist</div> */}
+              {/* <div className="text-xs text-gray-600">TLLP</div> */}
+              {/* </div> */}
             </div>
           </div>
 
@@ -88,7 +88,7 @@ const HeroSection = () => {
               <div className="flex items-center justify-center lg:justify-start space-x-3">
                 <div className="w-12 h-px bg-[#8B9A6B]"></div>
                 <p className="text-sm font-semibold tracking-widest text-[#8B9A6B] uppercase">
-                  Licensed Clinical Psychologist - TLLP
+                  Licensed Clinical Therapist - TLLP
                 </p>
                 <div className="w-12 h-px bg-[#8B9A6B]"></div>
               </div>

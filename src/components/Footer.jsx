@@ -33,7 +33,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-[#8B9A6B] rounded-full mt-2 flex-shrink-0"></div>
                 <div>
-                  <p className="text-gray-700 font-medium">Licensed Clinical Psychologist</p>
+                  <p className="text-gray-700 font-medium">Licensed Clinical Therapist</p>
                   <p className="text-gray-600 text-sm">TLLP</p>
                 </div>
               </div>
