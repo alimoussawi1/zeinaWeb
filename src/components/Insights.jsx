@@ -532,10 +532,15 @@ export default function Insights() {
                             <div className="grid gap-3 max-h-96 overflow-y-auto">
                                 {[
                                     {
+                                        title: "Positive Psychology Certificate ",
+                                        org: "Harvard Medical School and Harvard Health Publishing",
+                                        date: "09/27/2025"
+                                    },
+                                    {
                                         title:
                                             "Mandated Reporting for Confidential Victim Service Providers at DVS-Funded Organizers",
                                         org: "MSHSS",
-                                        date: "06/12/25",
+                                        date: "06/12/2025",
                                     },
                                     {
                                         title: "Trauma Across the Lifespan",

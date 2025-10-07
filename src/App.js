@@ -16,6 +16,9 @@ import TherapyProcessFlow from "./components/AboutUs";
 import About from "./components/About";
 import zeinalogo from "./assets/zeina.png"
 import ConditionsMarquee from "./components/Bubbles";
+import insurance1 from "./assets/insurance1.jpeg"
+import insurance2 from "./assets/insurance2.jpeg"
+import insurance3 from "./assets/insurance3.jpeg"
 
 
 const HeroSection = () => {
@@ -88,7 +91,7 @@ const HeroSection = () => {
               <div className="flex items-center justify-center lg:justify-start space-x-3">
                 <div className="w-12 h-px bg-[#8B9A6B]"></div>
                 <p className="text-sm font-semibold tracking-widest text-[#8B9A6B] uppercase">
-                  Licensed Clinical Therapist - TLLP
+                  Clinical Psychologist - TLLP
                 </p>
                 <div className="w-12 h-px bg-[#8B9A6B]"></div>
               </div>
@@ -164,13 +167,20 @@ const HeroSection = () => {
         <ConditionsMarquee />
 
       </div>
-
-      {/* Bottom Wave Decoration */}
-      <div className="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1200 200" className="w-full h-20 fill-white/50">
-          <path d="M0,100 C300,50 600,150 1200,100 L1200,200 L0,200 Z" />
-        </svg>
+      <div className="flex justify-center mb-2">
+        <h2 className="text-2xl sm:text-3xl font-light text-[#8B7355]">
+          Insurance Accepted
+        </h2>
       </div>
+
+      <div className="flex justify-center gap-4 mb-4">
+        <img src={insurance1} alt="Image 1" className="w-30 h-24 object-cover" />
+        <img src={insurance2} alt="Image 2" className="w-24 h-24 object-cover" />
+        <img src={insurance3} alt="Image 3" className="w-24 h-24 object-cover" />
+      </div>
+
+
+
     </section>
   );
 };
