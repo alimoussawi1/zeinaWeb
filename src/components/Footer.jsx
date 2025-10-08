@@ -66,7 +66,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="tel:+13132662374"
+                href="tel:+13134519568"
                 className="flex items-center space-x-3 text-gray-700 hover:text-[#8B9A6B] transition-colors duration-300 group"
               >
                 <div className="p-2 bg-[#8B9A6B]/10 rounded-lg group-hover:bg-[#8B9A6B]/20 transition-colors duration-300">

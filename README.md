@@ -75,6 +75,6 @@ how to go build
 git add .
 git commit -m " "
 git push origin main
-npm run build
+npm run deploy
 
 >>>>>>> f3de0a6b340fc10a7feaf760c583a21de930e0a3

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.30402e39.css",
-    "main.js": "/static/js/main.2c22a31a.js",
+    "main.js": "/static/js/main.dcbb8ffb.js",
     "static/media/zeina.png": "/static/media/zeina.6ef8ab625d2b20aed654.png",
     "static/media/3.jpg": "/static/media/3.248ba5e7f63bcd1f4102.jpg",
     "static/media/4.jpg": "/static/media/4.d1edd51bd2e696df32a8.jpg",
@@ -12,13 +12,15 @@
     "static/media/2.jpg": "/static/media/2.512244e2e4f07b250e0a.jpg",
     "static/media/chair.jpeg": "/static/media/chair.8718e849467de5c21a25.jpeg",
     "static/media/logo.png": "/static/media/logo.d3a34eeef7747435ef51.png",
+    "static/media/insurance1.jpeg": "/static/media/insurance1.6b2f332f70d469ad3346.jpeg",
     "static/media/recreo.png": "/static/media/recreo.1e6ffae54b00359bb659.png",
+    "static/media/insurance2.jpeg": "/static/media/insurance2.2218b507fa4491eef05c.jpeg",
     "index.html": "/index.html",
     "main.30402e39.css.map": "/static/css/main.30402e39.css.map",
-    "main.2c22a31a.js.map": "/static/js/main.2c22a31a.js.map"
+    "main.dcbb8ffb.js.map": "/static/js/main.dcbb8ffb.js.map"
   },
   "entrypoints": [
     "static/css/main.30402e39.css",
-    "static/js/main.2c22a31a.js"
+    "static/js/main.dcbb8ffb.js"
   ]
 }
